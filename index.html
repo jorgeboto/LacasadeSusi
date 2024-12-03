@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa de Susi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo del encabezado con fondo */
+        .hero {
+            position: relative;
+            height: 100vh;
+            /* Fondo con gradiente y la imagen en el centro, ajustada para cubrir todo */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('images/background.jpg') no-repeat center center/cover;
+            color: rgb(240, 241, 237);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    
+        /* Estilo del título principal con fondo de color sólido y sombra */
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ffffff; /* Blanco */
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8), 
+                         -3px -3px 10px rgba(148, 174, 245, 0.849), 
+                         5px 5px 10px rgba(148, 174, 245, 0.849);
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+    
+        .hero-subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+    
+        .btn {
+            background-color: #fff;
+            color: #333;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+    
+        .btn:hover {
+            background-color: #f0f0f0;
+        }
+    
+        /* Superposición opcional */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+    
+        .hero-title, .hero-subtitle, .btn {
+            position: relative;
+            z-index: 2;
+        }
+    
+        /* Estilo de la sección de valores */
+        .valores .card {
+            background-color: #fff7c2; /* Amarillo claro */
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+    
+        .valores .card h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    
+        .valores .card p {
+            font-size: 1rem;
+            color: #555;
+        }
+    
+        /* Estilo de la sección de llamado a la acción */
+        .cta {
+            background-color: #f0f8ff; /* Azul muy claro */
+            color: #4682b4; /* Azul medianoche */
+            text-align: center;
+            padding: 50px 0;
+        }
+    
+        .cta h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #4682b4; /* Azul medianoche */
+            margin-bottom: 20px;
+        }
+    
+        .cta .btn {
+            background-color: #4682b4; /* Azul medianoche */
+            color: white;
+        }
+    
+        .cta .btn:hover {
+            background-color: #5f9ea0; /* Azul cadete */
+        }
+    </style>    
+</head>
+<body>
+    <!-- Encabezado con imagen de fondo -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero-title">La Casa de Susi</h1>
+            <h2 class="hero-subtitle">"La magia del diseño artesanal al alcance de tus manos"</h2>
+            <a href="productos.html" class="btn">Explora nuestra colección</a>
+        </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de bienvenida -->
+    <main>
+        <section id="bienvenida" class="bienvenida">
+            <div class="container">
+                <h2>Bienvenidos a La Casa de Susi</h2>
+                <p>En Creaciones Arribas, celebramos la belleza de la artesanía. Cada pieza que creamos está inspirada en la naturaleza, la tradición y la pasión por el arte.</p>
+                <a href="nosotros.html" class="btn">Conoce nuestra historia</a>
+            </div>
+            <div class="container">
+                <img src="images/IMG_4060.jpg" alt="Bolso 2" class="product-image">
+            </div>
+        </section>
+
+        <!-- Sección de valores -->
+        <section id="valores" class="valores">
+            <div class="container">
+                <h2>Nuestros Valores</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Artesanía</h3>
+                        <p>Creemos en el poder de las manos para dar vida a algo único y especial.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Sostenibilidad</h3>
+                        <p>Comprometidos con materiales y procesos que respetan el medio ambiente.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Inspiración</h3>
+                        <p>Cada bolso cuenta una historia, inspirada en la belleza y personalidad que nos rodea.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de llamado a la acción -->
+        <section id="cta" class="cta">
+            <div class="container">
+                <h2>¿Listo para llevar un pedazo de arte contigo?</h2>
+                <a href="productos.html" class="btn">Descubre nuestras piezas</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 La Casa de Susi - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
